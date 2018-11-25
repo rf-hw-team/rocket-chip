@@ -14,7 +14,7 @@ case class PeripheryBusParams(
   arithmeticAtomics: Boolean = true,
   bufferAtomics: BufferParams = BufferParams.default,
   sbusCrossingType: SubsystemClockCrossing = SynchronousCrossing(), // relative to sbus
-  frequency: BigInt = BigInt(100000000) // 100 MHz as default bus frequency
+  frequency: BigInt = BigInt(50000000) // 50 MHz as default bus frequency
 ) extends HasTLBusParams
 
 case object PeripheryBusKey extends Field[PeripheryBusParams]
